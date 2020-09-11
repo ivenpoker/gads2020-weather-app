@@ -1,0 +1,105 @@
+.app-white-body {
+    background-color: #eee;
+}
+.border-bottom-dark {
+    border-bottom: #4e555b;
+}
+
+.border-radius-8 {
+    border-radius: 8px;
+}
+
+.pitch-dark {
+    background-color: #000000 !important;
+}
+
+.small-font {
+    font-size: 80%;
+    font-weight: 500;
+}
+
+div.app-sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10px;
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+input#city-name:focus {
+    outline: none;
+    border-color: #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*border-color: inherit;*/
+}
+
+.row-footer {
+    background-color: #4e555b;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.footer-bottom {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+/* #################### SPINNER (LOADING) ANIMATION ##################*/
+.spinner {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+      }
+}

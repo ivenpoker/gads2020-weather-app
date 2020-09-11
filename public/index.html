@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Weather App</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<script type="text/javascript" rel="script" src="js/app.js"></script>
+	</head>
+	<body class="app-white-body">
+		<div class="container mt-2">
+			<div id="app-main-jumbotron" class="jumbotron bg-dark text-white-50 p-5 one-edge-shadow">
+				<div class="container text-center">
+					<h5 class="text-muted text-center font-weight-bold text-uppercase">GADS2020 Weather App</h5>
+					<div class="badge badge-dark text-center font-weight-bold">
+						Please search by city name or click on specific history to view weather data
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id="__VCS_UI_history_view" class="col-md-4 mb-2">
+					<!-- HISTORY DATA WILL BE LOADED HERE -->
+				</div>
+				<div class="col-md-8">
+
+					<div id="loader-div">
+						<div class="spinner">
+							<div class="bounce1"></div>
+							<div class="bounce2"></div>
+							<div class="bounce3"></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 text-center">
+						<span class="text-dark small d-inline-block" id="loading-state-info">
+							<!-- show data fetch state here ...-->
+						</span>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="__VCS_UI_data_view">
+
+						<div id="search-input-view">
+							<div class="row mb-2">
+								<div class="col-sm-8 mb-2">
+									<input type="search"
+									       class="one-edge-shadow form-control form-control-sm w-100 p-2 text-center font-weight-bold"
+									       placeholder="Enter city name to get weather data ..."
+									       id="city-name"
+									/>
+								</div>
+								<div class="col-sm-4">
+									<button id="city-name-search" class="btn p-2 btn-dark btn-block btn-sm one-edge-shadow">
+										search now
+									</button>
+								</div>
+							</div>
+							<hr/>
+						</div>
+
+						<div id="data-load-error" class="d-none">
+							<div class="row">
+								<div class="col-sm-2"></div>
+								<div class="col-sm-8">
+									<div class="alert one-edge-shadow alert-dark text-center text-uppercase font-weight-bold p-4">
+										<div class="mt-2 mb-2" >Weather data not available.</div>
+										<kbd id="error-msg" class="mt-4 small"></kbd>
+									</div>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+						</div>
+
+						<div class="" id="weather-core-data-view">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script></script>
+	<script type="text/javascript"></script>
+</html>
